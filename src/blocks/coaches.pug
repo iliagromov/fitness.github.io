@@ -1,0 +1,14 @@
+mixin item(img, title, subtitle)
+    .coaches-items-item
+        img.page__img(src=img, alt="img")
+        h3.page__title-h3=title
+        .page__text=subtitle
+
+section.coaches
+    .wrapper
+        h2.page__title-h2 our Coaches
+        .coaches-items
+            +item('assets/img/img-fitness-1.jpg','Lance Bogrol', 'Powerlifting')
+            +item('assets/img/img-fitness-2.jpg','Penny Tool', 'Fitness')
+            +item('assets/img/img-fitness-3.jpg','Pelican Steve', 'Yoga')
+            +item('assets/img/img-fitness-4.jpg','Sue Shei', 'Boxing')

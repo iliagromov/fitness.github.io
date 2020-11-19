@@ -1,0 +1,21 @@
+extends templates/template
+
+block title
+	title Fitness
+block append style
+block content
+	main.page
+		include modules/header-module
+		include blocks/banner
+		include blocks/about
+		include blocks/workout
+		include blocks/coaches
+		include blocks/benefits
+		include blocks/price
+		include blocks/testimonial
+		include blocks/contact
+	include blocks/footer
+	
+block append script
+	script(src='js/store-scroll.js')
+	script(src='js/scroll-anchors.js')

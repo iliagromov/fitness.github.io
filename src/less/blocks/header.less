@@ -1,0 +1,17 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    .wrapper{
+        border-bottom: 1px solid @color_gray-3;
+    }
+    &__logo{
+        .sprite(@icon-logo);
+        margin: 10px auto;
+    }
+    &.animated{
+        .animated({
+            .fadeIn();
+        });
+    }
+}

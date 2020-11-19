@@ -1,0 +1,108 @@
+.testimonial{
+    position: relative;
+    padding: 75px 0;
+    min-height: 400px;
+    .page__title-h2{
+        position: relative;
+        text-align: center;
+        color: @color_white;
+        margin-bottom: 50px;
+    }
+    &-block{
+        position: relative;
+        color: @color_white;
+        .row-flex();
+        .size(9);
+        .size-sm(12);
+        margin: 0 auto;
+        background: rgba(0,0,0,0.5);
+        padding: 25px 30px;
+        .sm( padding, 25px 0px);
+        .xs-block({
+            justify-content: center;
+            margin: 0 auto;
+        });
+        .page__text {
+            color: @color_white;
+        }
+        &-info{
+            
+            .col();
+            .size(6);
+            .size-sm(12);
+            &__img{
+                display: flex;
+                .sm(flex-direction,column);
+                .page__img{
+                    width: 110px;
+                    height: 110px;
+                    border-radius: 100%;
+                    .sm(margin,0 auto 20px);
+                }
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: left;
+                    .sm(margin-bottom, 20px);
+                }
+                .page__text {
+                    color: @color_white;
+                }
+            }
+        }
+        &-text{
+            .col();
+            .size(6);
+            .size-sm(12);
+            .sm-block({
+                border-left: 0;
+                text-align: center;
+            });
+            display: flex;
+            align-items: center;
+            border-left: 1px solid;
+            padding-left: 10px;
+        }
+    }
+    &_parallax{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        
+        background-image: url('../assets/img/img-bg-2.jpg');
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &_opacity{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    &.animated{
+        opacity: 1;
+        .benefits-block__img{
+            .animated({
+                .fadeInRight();
+            });
+        }
+        .page__title-h2,
+        .testimonial-block-info,
+        .testimonial-block-text{
+            .animated({
+                .zoomIn();
+            });
+        }
+        .testimonial-block-text{
+            .delay(.2s);
+        }
+    }
+}

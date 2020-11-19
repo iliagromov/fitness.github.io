@@ -1,0 +1,59 @@
+.workout{
+    background-color: @color_gray-f5;
+    padding: 70px 0;
+    margin-top: -130px;
+    min-height: 250px;
+    opacity: 0;
+    .sm(margin-top, 0);
+    .page__title-h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    &-items{
+        .row-flex();
+        .sm(justify-content, center);
+        &-item{
+            .col();
+            .size(4);
+            .size-sm(6);
+            .size-xs(12);
+            .xs(margin-bottom,15px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            &__icon{
+                &_dumbbell{
+                    .sprite(@icon-dumbbell);
+                }
+                &_videos{
+                    .sprite(@icon-videos);
+                }
+                &_youga{
+                    .sprite(@icon-youga);
+                }
+            }
+        }
+    }
+    &.animated{
+        opacity: 1;
+        .page__title-h2,
+        .workout-items-item{
+            .animated({
+                .zoomIn();
+            });
+        }
+        .workout-items-item{
+            &:nth-child(1){
+                .delay(.2s);
+            }
+            &:nth-child(2){
+                .delay(.4s);
+            }
+            &:nth-child(3){
+                .delay(.6s);
+            }
+        }
+    }
+}

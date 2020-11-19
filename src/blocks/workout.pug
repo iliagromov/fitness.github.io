@@ -1,0 +1,12 @@
+mixin item(iconClass, title)
+    .workout-items-item
+        div(class=iconClass)
+        h3.page__title-h3=title
+        .page__text At solmen esser necessi far uniform grammat pronuncation paroles.
+section.workout
+    .wrapper
+        h2.page__title-h2 our fitness workout
+        .workout-items
+            +item('workout-items-item__icon_dumbbell', 'Expert trainers')
+            +item('workout-items-item__icon_videos', 'Videos workout')
+            +item('workout-items-item__icon_youga', 'Yoga fitness')

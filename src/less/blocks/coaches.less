@@ -1,0 +1,78 @@
+.coaches{
+    margin-top: -80px;
+    margin-bottom: 50px;
+    
+    .sm-block({
+        margin-top:0;
+        margin-bottom: 0;
+    });
+    .wrapper{
+        background-color:@color_green;
+        
+    }
+    .page__title-h2{
+        padding: 70px 0;
+        color: @color_white;
+        text-align: center;
+        padding-bottom: 50px;
+        opacity: 0; 
+    }
+    &-items{
+        .row-flex();
+        opacity: 0;  
+        padding-bottom: 50px;
+        &-item{
+            .col();
+            .size(3);
+            .size-sm(6);
+            .size-xs(12);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .sm(margin-bottom, 20px);
+            .page__img{
+                width: 176px;
+                height: 176px;
+                border-radius: 100%;
+            }
+            .page__title-h3{
+                font-size: 18px;
+                color: @color_white;
+                font-family: '@{Exo2}-Bold';
+                text-transform: uppercase;
+                padding: 10px 0 0;
+            }
+            .page__text{
+                color: @color_white; 
+            }
+        }
+    }
+    &.animated{
+       
+        .page__title-h2,
+        .coaches-items{
+            opacity: 1;
+        }
+
+        .page__title-h2,
+        .coaches-items-item{
+            .animated({
+                .zoomIn();
+            });
+        }
+        .coaches-items-item{
+            &:nth-child(1){
+                .delay(.8s);
+            }
+            &:nth-child(2){
+                .delay(.6s);
+            }
+            &:nth-child(3){
+                .delay(.4s);
+            }
+            &:nth-child(4){
+                .delay(.2s);
+            }
+        }
+    }
+}

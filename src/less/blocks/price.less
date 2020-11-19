@@ -1,0 +1,90 @@
+.price{
+    padding: 70px 0; 
+    opacity: 0;
+    .page__title-h2{
+        padding-bottom: 50px; 
+        text-align:center;
+    }
+    .price-items{
+        .row-flex();
+        .sm(justify-content,center);
+        &-item{
+            .col();
+            .size(4);
+            .size-sm(6);
+            .size-xs(12);
+            .sm(margin-bottom,20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 35px 50px;
+            &__icon{
+                &_man{
+                    .sprite(@icon-man);
+                }
+                &_cup{
+                    .sprite(@icon-cup);
+                }
+                &_crown{
+                    .sprite(@icon-crown);
+                }
+            }
+            border: 2px solid @color_green;
+           
+            .page__title-h3{
+                padding: 15px 10px;
+                text-transform: uppercase;
+            }
+            .page__text_semibold{
+                font-size: 20px;
+                color:#686868;    
+                border-bottom: 1px solid;
+                padding-bottom: 15px;
+                margin-bottom: 10px;
+                .page_color-green{
+                    margin-right: 8px;
+                }
+               
+            }
+            .page__ul-li{
+                font-size: 16px;
+                letter-spacing: 0px;
+                line-height: 30px;
+                color: #888888;
+            }
+           
+
+            .page__btn{
+                width: 100%;
+                margin-top: 20px;
+                height: 53px;
+            }
+        }
+    }
+    &.animated{
+        opacity: 1;
+        .benefits-block__img{
+            .animated({
+                .fadeInRight();
+            });
+        }
+        .page__title-h2,
+        .price-items-item{
+            .animated({
+                .zoomIn();
+            });
+        }
+        .price-items-item{
+            &:nth-child(1){
+                .delay(.2s);
+            }
+            &:nth-child(2){
+                .delay(.3s);
+            }
+            &:nth-child(3){
+                .delay(.4s);
+            }
+        }
+    }
+}

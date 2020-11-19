@@ -1,0 +1,83 @@
+.benefits{
+    background-color:@color_gray-f5;
+    overflow: hidden;
+    opacity: 0;
+    &-block{
+        .row-flex();
+        .sm(padding-bottom, 70px);
+        &__text{
+            .col();
+            .size(5.5);
+            .size-sm(12);
+            .shift-right(0.5);
+            .shift-sm-right(0);
+            .page__title-h2{
+                padding: 70px 0 50px;
+                .sm(text-align, center);
+            }
+            .page__ol{
+                counter-reset: section; 
+                margin: 0;
+                padding: 0;
+                &-li{
+                    list-style: none;
+                    padding:10px 0 ;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 1px;
+                    line-height: 26px;
+                    &::before{
+                        
+                        counter-increment: section;                 /* Инкрементирует счетчик*/
+                        content: counter(section);   /* Отображает текущее  значение счетчика */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-width: 51px;
+                        min-height: 51px;
+                        border-radius: 3px;
+                        background-color: @color_green;
+                        font-size: 20px;
+                        font-family: @fontBold;
+                        color: @color_white;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        &__img{
+            .col();
+            .size(10);
+            .shift-right(-6);
+            .sm(display, none);
+        }
+    }
+    &.animated{
+        opacity: 1;
+        .benefits-block__img{
+            .animated({
+                .fadeInRight();
+            });
+        }
+        .page__title-h2,
+        .page__ol-li{
+            .animated({
+                .zoomIn();
+            });
+        }
+        .page__ol-li{
+            &:nth-child(1){
+                .delay(.2s);
+            }
+            &:nth-child(2){
+                .delay(.3s);
+            }
+            &:nth-child(3){
+                .delay(.4s);
+            }
+            &:nth-child(4){
+                .delay(.5s);
+            }
+        }
+    }
+}

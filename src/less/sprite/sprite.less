@@ -1,0 +1,351 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-android-name: 'icon-android';
+@icon-android-x: 217px;
+@icon-android-y: 0px;
+@icon-android-offset-x: -217px;
+@icon-android-offset-y: 0px;
+@icon-android-width: 16px;
+@icon-android-height: 19px;
+@icon-android-total-width: 233px;
+@icon-android-total-height: 231px;
+@icon-android-image: '../assets/icons/sprite.png';
+@icon-android: 217px 0px -217px 0px 16px 19px 233px 231px '../assets/icons/sprite.png' 'icon-android';
+@icon-apple-name: 'icon-apple';
+@icon-apple-x: 38px;
+@icon-apple-y: 170px;
+@icon-apple-offset-x: -38px;
+@icon-apple-offset-y: -170px;
+@icon-apple-width: 18px;
+@icon-apple-height: 19px;
+@icon-apple-total-width: 233px;
+@icon-apple-total-height: 231px;
+@icon-apple-image: '../assets/icons/sprite.png';
+@icon-apple: 38px 170px -38px -170px 18px 19px 233px 231px '../assets/icons/sprite.png' 'icon-apple';
+@icon-calendar-name: 'icon-calendar';
+@icon-calendar-x: 217px;
+@icon-calendar-y: 29px;
+@icon-calendar-offset-x: -217px;
+@icon-calendar-offset-y: -29px;
+@icon-calendar-width: 16px;
+@icon-calendar-height: 17px;
+@icon-calendar-total-width: 233px;
+@icon-calendar-total-height: 231px;
+@icon-calendar-image: '../assets/icons/sprite.png';
+@icon-calendar: 217px 29px -217px -29px 16px 17px 233px 231px '../assets/icons/sprite.png' 'icon-calendar';
+@icon-clock-name: 'icon-clock';
+@icon-clock-x: 0px;
+@icon-clock-y: 121px;
+@icon-clock-offset-x: 0px;
+@icon-clock-offset-y: -121px;
+@icon-clock-width: 39px;
+@icon-clock-height: 39px;
+@icon-clock-total-width: 233px;
+@icon-clock-total-height: 231px;
+@icon-clock-image: '../assets/icons/sprite.png';
+@icon-clock: 0px 121px 0px -121px 39px 39px 233px 231px '../assets/icons/sprite.png' 'icon-clock';
+@icon-crown-name: 'icon-crown';
+@icon-crown-x: 95px;
+@icon-crown-y: 121px;
+@icon-crown-offset-x: -95px;
+@icon-crown-offset-y: -121px;
+@icon-crown-width: 38px;
+@icon-crown-height: 32px;
+@icon-crown-total-width: 233px;
+@icon-crown-total-height: 231px;
+@icon-crown-image: '../assets/icons/sprite.png';
+@icon-crown: 95px 121px -95px -121px 38px 32px 233px 231px '../assets/icons/sprite.png' 'icon-crown';
+@icon-cup-name: 'icon-cup';
+@icon-cup-x: 49px;
+@icon-cup-y: 121px;
+@icon-cup-offset-x: -49px;
+@icon-cup-offset-y: -121px;
+@icon-cup-width: 36px;
+@icon-cup-height: 38px;
+@icon-cup-total-width: 233px;
+@icon-cup-total-height: 231px;
+@icon-cup-image: '../assets/icons/sprite.png';
+@icon-cup: 49px 121px -49px -121px 36px 38px 233px 231px '../assets/icons/sprite.png' 'icon-cup';
+@icon-dumbbell-name: 'icon-dumbbell';
+@icon-dumbbell-x: 117px;
+@icon-dumbbell-y: 60px;
+@icon-dumbbell-offset-x: -117px;
+@icon-dumbbell-offset-y: -60px;
+@icon-dumbbell-width: 65px;
+@icon-dumbbell-height: 31px;
+@icon-dumbbell-total-width: 233px;
+@icon-dumbbell-total-height: 231px;
+@icon-dumbbell-image: '../assets/icons/sprite.png';
+@icon-dumbbell: 117px 60px -117px -60px 65px 31px 233px 231px '../assets/icons/sprite.png' 'icon-dumbbell';
+@icon-fb-black-name: 'icon-fb-black';
+@icon-fb-black-x: 217px;
+@icon-fb-black-y: 82px;
+@icon-fb-black-offset-x: -217px;
+@icon-fb-black-offset-y: -82px;
+@icon-fb-black-width: 13px;
+@icon-fb-black-height: 18px;
+@icon-fb-black-total-width: 233px;
+@icon-fb-black-total-height: 231px;
+@icon-fb-black-image: '../assets/icons/sprite.png';
+@icon-fb-black: 217px 82px -217px -82px 13px 18px 233px 231px '../assets/icons/sprite.png' 'icon-fb-black';
+@icon-fb-white-name: 'icon-fb-white';
+@icon-fb-white-x: 0px;
+@icon-fb-white-y: 216px;
+@icon-fb-white-offset-x: 0px;
+@icon-fb-white-offset-y: -216px;
+@icon-fb-white-width: 10px;
+@icon-fb-white-height: 15px;
+@icon-fb-white-total-width: 233px;
+@icon-fb-white-total-height: 231px;
+@icon-fb-white-image: '../assets/icons/sprite.png';
+@icon-fb-white: 0px 216px 0px -216px 10px 15px 233px 231px '../assets/icons/sprite.png' 'icon-fb-white';
+@icon-google-black-name: 'icon-google-black';
+@icon-google-black-x: 143px;
+@icon-google-black-y: 121px;
+@icon-google-black-offset-x: -143px;
+@icon-google-black-offset-y: -121px;
+@icon-google-black-width: 27px;
+@icon-google-black-height: 18px;
+@icon-google-black-total-width: 233px;
+@icon-google-black-total-height: 231px;
+@icon-google-black-image: '../assets/icons/sprite.png';
+@icon-google-black: 143px 121px -143px -121px 27px 18px 233px 231px '../assets/icons/sprite.png' 'icon-google-black';
+@icon-in-black-name: 'icon-in-black';
+@icon-in-black-x: 66px;
+@icon-in-black-y: 170px;
+@icon-in-black-offset-x: -66px;
+@icon-in-black-offset-y: -170px;
+@icon-in-black-width: 18px;
+@icon-in-black-height: 18px;
+@icon-in-black-total-width: 233px;
+@icon-in-black-total-height: 231px;
+@icon-in-black-image: '../assets/icons/sprite.png';
+@icon-in-black: 66px 170px -66px -170px 18px 18px 233px 231px '../assets/icons/sprite.png' 'icon-in-black';
+@icon-in-white-name: 'icon-in-white';
+@icon-in-white-x: 217px;
+@icon-in-white-y: 110px;
+@icon-in-white-offset-x: -217px;
+@icon-in-white-offset-y: -110px;
+@icon-in-white-width: 15px;
+@icon-in-white-height: 15px;
+@icon-in-white-total-width: 233px;
+@icon-in-white-total-height: 231px;
+@icon-in-white-image: '../assets/icons/sprite.png';
+@icon-in-white: 217px 110px -217px -110px 15px 15px 233px 231px '../assets/icons/sprite.png' 'icon-in-white';
+@icon-inst-white-name: 'icon-inst-white';
+@icon-inst-white-x: 217px;
+@icon-inst-white-y: 135px;
+@icon-inst-white-offset-x: -217px;
+@icon-inst-white-offset-y: -135px;
+@icon-inst-white-width: 15px;
+@icon-inst-white-height: 15px;
+@icon-inst-white-total-width: 233px;
+@icon-inst-white-total-height: 231px;
+@icon-inst-white-image: '../assets/icons/sprite.png';
+@icon-inst-white: 217px 135px -217px -135px 15px 15px 233px 231px '../assets/icons/sprite.png' 'icon-inst-white';
+@icon-logo-name: 'icon-logo';
+@icon-logo-x: 0px;
+@icon-logo-y: 0px;
+@icon-logo-offset-x: 0px;
+@icon-logo-offset-y: 0px;
+@icon-logo-width: 207px;
+@icon-logo-height: 50px;
+@icon-logo-total-width: 233px;
+@icon-logo-total-height: 231px;
+@icon-logo-image: '../assets/icons/sprite.png';
+@icon-logo: 0px 0px 0px 0px 207px 50px 233px 231px '../assets/icons/sprite.png' 'icon-logo';
+@icon-mail-name: 'icon-mail';
+@icon-mail-x: 122px;
+@icon-mail-y: 170px;
+@icon-mail-offset-x: -122px;
+@icon-mail-offset-y: -170px;
+@icon-mail-width: 18px;
+@icon-mail-height: 14px;
+@icon-mail-total-width: 233px;
+@icon-mail-total-height: 231px;
+@icon-mail-image: '../assets/icons/sprite.png';
+@icon-mail: 122px 170px -122px -170px 18px 14px 233px 231px '../assets/icons/sprite.png' 'icon-mail';
+@icon-man-name: 'icon-man';
+@icon-man-x: 0px;
+@icon-man-y: 170px;
+@icon-man-offset-x: 0px;
+@icon-man-offset-y: -170px;
+@icon-man-width: 28px;
+@icon-man-height: 36px;
+@icon-man-total-width: 233px;
+@icon-man-total-height: 231px;
+@icon-man-image: '../assets/icons/sprite.png';
+@icon-man: 0px 170px 0px -170px 28px 36px 233px 231px '../assets/icons/sprite.png' 'icon-man';
+@icon-mark-map-name: 'icon-mark-map';
+@icon-mark-map-x: 192px;
+@icon-mark-map-y: 60px;
+@icon-mark-map-offset-x: -192px;
+@icon-mark-map-offset-y: -60px;
+@icon-mark-map-width: 12px;
+@icon-mark-map-height: 17px;
+@icon-mark-map-total-width: 233px;
+@icon-mark-map-total-height: 231px;
+@icon-mark-map-image: '../assets/icons/sprite.png';
+@icon-mark-map: 192px 60px -192px -60px 12px 17px 233px 231px '../assets/icons/sprite.png' 'icon-mark-map';
+@icon-phone-name: 'icon-phone';
+@icon-phone-x: 217px;
+@icon-phone-y: 56px;
+@icon-phone-offset-x: -217px;
+@icon-phone-offset-y: -56px;
+@icon-phone-width: 16px;
+@icon-phone-height: 16px;
+@icon-phone-total-width: 233px;
+@icon-phone-total-height: 231px;
+@icon-phone-image: '../assets/icons/sprite.png';
+@icon-phone: 217px 56px -217px -56px 16px 16px 233px 231px '../assets/icons/sprite.png' 'icon-phone';
+@icon-pintrest-black-name: 'icon-pintrest-black';
+@icon-pintrest-black-x: 180px;
+@icon-pintrest-black-y: 121px;
+@icon-pintrest-black-offset-x: -180px;
+@icon-pintrest-black-offset-y: -121px;
+@icon-pintrest-black-width: 19px;
+@icon-pintrest-black-height: 18px;
+@icon-pintrest-black-total-width: 233px;
+@icon-pintrest-black-total-height: 231px;
+@icon-pintrest-black-image: '../assets/icons/sprite.png';
+@icon-pintrest-black: 180px 121px -180px -121px 19px 18px 233px 231px '../assets/icons/sprite.png' 'icon-pintrest-black';
+@icon-tw-black-name: 'icon-tw-black';
+@icon-tw-black-x: 94px;
+@icon-tw-black-y: 170px;
+@icon-tw-black-offset-x: -94px;
+@icon-tw-black-offset-y: -170px;
+@icon-tw-black-width: 18px;
+@icon-tw-black-height: 18px;
+@icon-tw-black-total-width: 233px;
+@icon-tw-black-total-height: 231px;
+@icon-tw-black-image: '../assets/icons/sprite.png';
+@icon-tw-black: 94px 170px -94px -170px 18px 18px 233px 231px '../assets/icons/sprite.png' 'icon-tw-black';
+@icon-tw-white-name: 'icon-tw-white';
+@icon-tw-white-x: 217px;
+@icon-tw-white-y: 160px;
+@icon-tw-white-offset-x: -217px;
+@icon-tw-white-offset-y: -160px;
+@icon-tw-white-width: 15px;
+@icon-tw-white-height: 15px;
+@icon-tw-white-total-width: 233px;
+@icon-tw-white-total-height: 231px;
+@icon-tw-white-image: '../assets/icons/sprite.png';
+@icon-tw-white: 217px 160px -217px -160px 15px 15px 233px 231px '../assets/icons/sprite.png' 'icon-tw-white';
+@icon-videos-name: 'icon-videos';
+@icon-videos-x: 56px;
+@icon-videos-y: 60px;
+@icon-videos-offset-x: -56px;
+@icon-videos-offset-y: -60px;
+@icon-videos-width: 51px;
+@icon-videos-height: 42px;
+@icon-videos-total-width: 233px;
+@icon-videos-total-height: 231px;
+@icon-videos-image: '../assets/icons/sprite.png';
+@icon-videos: 56px 60px -56px -60px 51px 42px 233px 231px '../assets/icons/sprite.png' 'icon-videos';
+@icon-vimeo-white-name: 'icon-vimeo-white';
+@icon-vimeo-white-x: 217px;
+@icon-vimeo-white-y: 185px;
+@icon-vimeo-white-offset-x: -217px;
+@icon-vimeo-white-offset-y: -185px;
+@icon-vimeo-white-width: 15px;
+@icon-vimeo-white-height: 15px;
+@icon-vimeo-white-total-width: 233px;
+@icon-vimeo-white-total-height: 231px;
+@icon-vimeo-white-image: '../assets/icons/sprite.png';
+@icon-vimeo-white: 217px 185px -217px -185px 15px 15px 233px 231px '../assets/icons/sprite.png' 'icon-vimeo-white';
+@icon-youga-name: 'icon-youga';
+@icon-youga-x: 0px;
+@icon-youga-y: 60px;
+@icon-youga-offset-x: 0px;
+@icon-youga-offset-y: -60px;
+@icon-youga-width: 46px;
+@icon-youga-height: 51px;
+@icon-youga-total-width: 233px;
+@icon-youga-total-height: 231px;
+@icon-youga-image: '../assets/icons/sprite.png';
+@icon-youga: 0px 60px 0px -60px 46px 51px 233px 231px '../assets/icons/sprite.png' 'icon-youga';
+@spritesheet-width: 233px;
+@spritesheet-height: 231px;
+@spritesheet-image: '../assets/icons/sprite.png';
+@spritesheet-sprites: @icon-android @icon-apple @icon-calendar @icon-clock @icon-crown @icon-cup @icon-dumbbell @icon-fb-black @icon-fb-white @icon-google-black @icon-in-black @icon-in-white @icon-inst-white @icon-logo @icon-mail @icon-man @icon-mark-map @icon-phone @icon-pintrest-black @icon-tw-black @icon-tw-white @icon-videos @icon-vimeo-white @icon-youga;
+@spritesheet: 233px 231px '../assets/icons/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(%a)', e(@sprite-image)));
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

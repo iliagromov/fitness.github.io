@@ -1,0 +1,21 @@
+mixin item(iconClass, title,price )
+        .price-items-item
+            div(class=iconClass)
+            h3.page__title-h3=title
+            .page__text_semibold 
+                span.page_color-green=price 
+                | Per Month
+            ul.page__ul
+                li.page__ul-li limited access
+                li.page__ul-li 1 Fitness Course
+                li.page__ul-li 5 Weeks Gym Pass
+                li.page__ul-li Free 2 Days Training
+                li.page__ul-li Unlimted Gym Enterance
+            a.page__btn(href="") Join us
+section#price.price
+    .wrapper
+        h2.page__title-h2 our price
+        .price-items
+            +item('price-items-item__icon_man','Newbie','28 $')
+            +item('price-items-item__icon_cup','Expert','58 $')
+            +item('price-items-item__icon_crown','Master','94 $')
